@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoro Trader - Stock Market & Analysis Educator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0b0f19;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: radial-gradient(circle at center, #1a233a 0%, #0b0f19 100%);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .top-tag {
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            color: #8b9bb4;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: inline-block;
+            padding: 6px 15px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .profile-container {
+            position: relative;
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            padding: 4px;
+            background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+            box-shadow: 0 0 25px rgba(0, 210, 255, 0.4);
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .educator-badge {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 6px 16px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+        }
+
+        .sub-heading {
+            color: #00d2ff;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 15px;
+        }
+
+        h1 span {
+            color: #f39c12;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #a0aec0;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .telegram-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #0088cc, #005f9e);
+            color: white;
+            text-decoration: none;
+            padding: 16px 20px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 6px 20px rgba(0, 136, 204, 0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin-bottom: 20px;
+        }
+
+        .telegram-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 136, 204, 0.6);
+        }
+
+        .telegram-btn i {
+            font-size: 20px;
+        }
+
+        .features-info {
+            font-size: 13px;
+            color: #cbd5e0;
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .grid-boxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 14px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            text-align: center;
+        }
+
+        .india-badge {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 13px;
+            color: #cbd5e0;
+            margin-bottom: 30px;
+        }
+
+        .disclaimer {
+            font-size: 10px;
+            color: #718096;
+            line-height: 1.4;
+            text-align: justify;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Top Tag -->
+        <div class="top-tag">Research & Market Education • Trading Community</div>
+
+        <!-- Profile Photo -->
+        <div class="profile-container">
+            <!-- Nayi di gayi photo yahan set kar di gayi hai -->
+            <img src="https://i.ibb.co/nq5TXd7L/IMG-20261101-173411-693.jpg" alt="Zoro Trader" class="profile-img">
+        </div>
+
+        <!-- Badge -->
+        <div class="educator-badge">✔ MARKET EDUCATOR</div>
+
+        <!-- Heading & Details -->
+        <div class="sub-heading">Stock Market & Analysis Educator</div>
+        <h1>Learn Stock Market & Analysis with <span>ZORO TRADER</span></h1>
+        <p class="description">Daily Market Analysis • Nifty & Bank Nifty • Educational Insights</p>
+
+        <!-- Telegram Button with your link -->
+        <a href="https://t.me/+gM70YcQjR7xkODI1" target="_blank" class="telegram-btn">
+            <i class="fab fa-telegram-plane"></i> Join Telegram Community — Free
+        </a>
+
+        <!-- Extra Info -->
+        <div class="features-info">
+            <div>🔒 Instant Free Access — 100% Educational Content</div>
+            <div>👥 Join our growing 50,000+ trading community</div>
+        </div>
+
+        <!-- Grid Features -->
+        <div class="grid-boxes">
+            <div class="box">⚡ Daily Market Updates</div>
+            <div class="box">🎯 Nifty & BankNifty Setup</div>
+        </div>
+
+        <!-- Made for Indian Traders -->
+        <div class="india-badge">
+            🇮🇳 Made For Indian Traders & Investors
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer">
+            Disclaimer: Stock trading & investment are subject to market risks. Past performance is no guarantee of future results. Content shared on this platform is strictly for educational, informational and awareness purposes.
+        </div>
+    </div>
+
+</body>
+</html>
