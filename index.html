@@ -21,7 +21,7 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=28353389177672938&ev=PageView&noscript=1"
 /></noscript>
-<!-- E
+<!-- End Meta Pixel Code -->
     <style>
         * {
             margin: 0;
@@ -130,13 +130,8 @@ src="https://www.facebook.com/tr?id=28353389177672938&ev=PageView&noscript=1"
             font-size: 16px;
             font-weight: bold;
             box-shadow: 0 6px 20px rgba(0, 136, 204, 0.4);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
             margin-bottom: 20px;
-        }
-
-        .telegram-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 136, 204, 0.6);
+            width: 100%;
         }
 
         .telegram-btn i {
@@ -202,7 +197,6 @@ src="https://www.facebook.com/tr?id=28353389177672938&ev=PageView&noscript=1"
 
         <!-- Profile Photo -->
         <div class="profile-container">
-            <!-- Nayi di gayi photo yahan set kar di gayi hai -->
             <img src="https://i.ibb.co/nq5TXd7L/IMG-20261101-173411-693.jpg" alt="Zoro Trader" class="profile-img">
         </div>
 
@@ -214,9 +208,9 @@ src="https://www.facebook.com/tr?id=28353389177672938&ev=PageView&noscript=1"
         <h1>Learn Stock Market & Analysis with <span>ZORO TRADER</span></h1>
         <p class="description">Daily Market Analysis • Nifty & Bank Nifty • Educational Insights</p>
 
-        <!-- Telegram Button with your link -->
-        <a href="https://t.me/+gM70YcQjR7xkODI1" target="_blank" class="telegram-btn">
-            <i class="fab fa-telegram-plane"></i> Join Telegram Community — Free
+        <!-- Telegram Button (Auto-redirect message dikhayega) -->
+        <a href="https://t.me/+gM70YcQjR7xkODI1" id="telegramBtn" class="telegram-btn">
+            <i class="fas fa-spinner fa-spin"></i> Redirecting to Telegram in 1s...
         </a>
 
         <!-- Extra Info -->
@@ -241,6 +235,15 @@ src="https://www.facebook.com/tr?id=28353389177672938&ev=PageView&noscript=1"
             Disclaimer: Stock trading & investment are subject to market risks. Past performance is no guarantee of future results. Content shared on this platform is strictly for educational, informational and awareness purposes.
         </div>
     </div>
+
+    <script>
+        // Page load hote hi 1 second ka auto-redirect chal jayega
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = "https://t.me/+gM70YcQjR7xkODI1";
+            }, 1000); // 1000ms = 1 second
+        };
+    </script>
 
 </body>
 </html>
